@@ -11,9 +11,37 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: #4070f4;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0 0 0 0;
+    background-color: #353535;
+}
+
+.ffcontainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f4f4f4;
+}
+
+.container-fluid .navbar-brand {
+    color: #fff;
+}
+
+.container-fluid .navbar-brand:hover {
+    color: #4070f4;
 }
 
 .profile-card {
